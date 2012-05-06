@@ -183,16 +183,9 @@ when "ubuntu"
     mode 0755
   end
 
-  bash "Stop running nginx" do
-    code <<-EOH
-      pid=`ps -ef | grep nginx | grep -v grep | awk '{print $2}'`
-      [ ! -z "$pid" ] && sudo kill $pid || true
-    EOH
-  end
-
   service "nginx" do
     supports :status => true, :restart => true, :reload => true
-    action [ :enable, :restart ]
+    action [ :enable, :start ]
   end
 
 else
