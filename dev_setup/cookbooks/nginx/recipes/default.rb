@@ -148,6 +148,9 @@ when "ubuntu"
       make install
 
       EOH
+    not_if do
+      ::File.exists?(File.join(node[:nginx][:path], "sbin", "nginx"))
+    end
   end
 
   template "nginx.conf" do
