@@ -1,4 +1,4 @@
-include_attributes "uaadb"
+include_attribute "uaadb"
 default[:uaadb][:host] = "localhost"
 
 default[:uaa][:jwt_secret] = "uaa_jwt_secret"
