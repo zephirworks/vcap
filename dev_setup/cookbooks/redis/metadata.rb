@@ -5,6 +5,6 @@ description      "Installs/Configures Redis"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
 version          "1.0.0"
 
-%w{ cloudfoundry deployment }.each do |cb|
+%w{ cloud_controller cloudfoundry deployment }.each do |cb|
   depends cb
 end
