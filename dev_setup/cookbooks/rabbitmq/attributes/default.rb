@@ -7,4 +7,3 @@ default[:rabbitmq][:plugins] = ["amqp_client", "mochiweb", "rabbitmq-management"
 default[:rabbitmq][:plugins_source] = "http://www.rabbitmq.com/releases/plugins/v#{rabbitmq[:version]}/"
 
 default[:rabbitmq_node][:index] = "0"
-default[:rabbitmq_node][:token] = "changerabbitmqtoken"

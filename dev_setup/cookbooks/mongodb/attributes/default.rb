@@ -6,4 +6,3 @@ default[:mongodb][:path] = File.join(node[:deployment][:home], "deploy", "mongod
 default[:mongodb_node][:capacity] = "50"
 default[:mongodb_node][:index] = "0"
 default[:mongodb_node][:max_memory] = "128"
-default[:mongodb_node][:token] = "changemongodbtoken"
