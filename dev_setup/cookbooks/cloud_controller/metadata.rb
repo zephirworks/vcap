@@ -5,6 +5,6 @@ description      "Installs/Configures Cloud Controller"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
 version          "0.0.1"
 
-%w{ cloudfoundry deployment uaa }.each do |cb|
+%w{ cloudfoundry deployment erlang nats_server node python ruby uaa }.each do |cb|
   depends cb
 end
