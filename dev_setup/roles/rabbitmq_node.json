@@ -1,5 +1,5 @@
 {
-  "name": "redis_node",
+  "name": "rabbitmq_node",
   "override_attributes": {},
   "json_class": "Chef::Role",
   "description": "RabbitMQ service node",

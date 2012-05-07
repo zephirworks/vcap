@@ -1,5 +1,5 @@
 {
-  "name": "mysql",
+  "name": "mysql_node",
   "override_attributes": {},
   "json_class": "Chef::Role",
   "description": "MySQL database for apps",
